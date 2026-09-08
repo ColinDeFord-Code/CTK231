@@ -1,51 +1,60 @@
-/* Anything between these two tags will be ignored by the browser */
+/* Shared styles for Assignment 3 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    line-height: 1.5;
+}
 
 h1 {
-    color: red;
+    background-color: #6b1d3a;
+    color: #ffffff;
+    padding: 12px;
 }
 
-/*p {
-    color: #ff3366;
-    background-color: #00ff00;
-}*/
-
-.specialp {
-    color: blue;
-    background-color: #ff0000;
-}
-#specialid {
-    color: green;
-    background-color: #ffff33f9;
-}
-.orangebg {
-    background-color: orange;
-}
-.spanstyle {
-    color: blue;
+h2 {
+    background-color: #d9e8f5;
+    color: #123d63;
+    padding: 8px;
 }
 
-a {
-    color: #ff0000;
-    text-decoration: none;
+h3 {
+    background-color: #e8f0e3;
+    color: #254d20;
+    padding: 6px;
+}
+
+p {
+    color: #333333;
+}
+
+.intro-section {
+    background-color: #ffffff;
+    border: 2px solid #6b1d3a;
+    padding: 15px;
+}
+
+.contact-label {
+    color: #6b1d3a;
+    font-weight: bold;
 }
 
 a:link {
-    color: #00ff00;
+    color: red;
 }
 
 a:visited {
-    color: #0000ff;
-}
-
-a:active {
-    color:#00ffff;
+    color: green;
 }
 
 a:hover {
-    color:#ff00ff;
-    text-decoration: underline;
+    color: yellow;
 }
 
-footer{
-    color: green;
+img {
+    max-width: 100%;
+    height: auto;
 }
