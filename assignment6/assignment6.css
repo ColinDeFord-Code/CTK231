@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: #d99595 url("a62.png") repeat;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 16px;
+    color: #111;
+    background: transparent;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: minmax(190px, 23%) minmax(0, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 2px solid #111;
+    background: #fff;
+}
+
+.page-header,
+.page-footer {
+    grid-column: 1 / -1;
+}
+
+.page-header h1 {
+    margin: 0;
+    padding: 23px 18px;
+    color: #fff;
+    background: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.primary-nav li {
+    margin: 0 0 16px;
+}
+
+.primary-nav a {
+    display: block;
+    padding: 16px;
+    color: #fff;
+    background: #f00;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+    background: #800000;
+}
+
+.content-panel {
+    min-width: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+}
+
+.content-panel h2 {
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+.content-panel p {
+    margin: 0 0 16px;
+    text-align: justify;
+}
+
+.content-panel .intro-note {
+    font-weight: bold;
+}
+
+.feature-photo {
+    float: left;
+    width: 53%;
+    height: auto;
+    margin: 0 16px 16px 0;
+    padding: 10px;
+    border: 3px solid #111;
+}
+
+.content-panel a:link,
+.content-panel a:visited {
+    color: #f00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content-panel a:hover,
+.content-panel a:focus {
+    color: #00e;
+    text-decoration: underline;
+}
+
+.page-footer {
+    padding: 14px 18px;
+    border: 2px solid #111;
+    color: #fff;
+    background: #f00;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.page-footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .page-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header,
+    .primary-nav,
+    .content-panel,
+    .page-footer {
+        grid-column: 1;
+    }
+
+    .feature-photo {
+        width: min(100%, 440px);
+        float: none;
+        display: block;
+    }
+}
